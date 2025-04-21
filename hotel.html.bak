@@ -1,0 +1,260 @@
+<html>
+<head>
+<style>
+
+Body { background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(KK.jpg);
+	   background-position:center;
+	   background-size:cover;
+	   height:100%;
+	}
+
+h2 {color:white;
+	font-size:65;
+	height:30px;
+		}
+		
+h1 { margin-left:700px;
+	}
+	
+	
+p {color:white;
+	font-size:35;
+	height:30px;
+			}		
+
+ul{
+	float:right;
+	list-style-type:none;
+	position:absolute;
+	width:50%;
+}
+
+
+	
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  }
+
+input[type=text], select, textarea, input [type=date] {
+									width: 100%;
+									padding: 12px;
+									border: 1px solid #ccc;
+									border-radius: 4px;
+									resize: vertical;
+									}
+
+label {
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+}									
+  
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+ input[type=submit]:hover {
+							background-color: #45a049;
+							}
+ 
+ .one {
+  float:left;
+  width: 20%;
+  margin-top: 6px;
+  margin-left:700px;
+  color:black;
+	}
+
+.two {
+  float: right;
+  width: 30%;
+  margin-top: 6px;
+  }
+  
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+</style>
+
+</head>
+
+
+<body>
+
+<div class="logo">
+<img src="logo.jpg" width="120" height="120" align="left">
+</div>
+<br><br><br><br>
+
+<h2 align="center"> The Luxury hotels in Sri Lanka </font> </h2>
+<p align="center">Experience something new momment</p>
+<br>
+<center>
+<b>
+<p align="center"> <font color="red" > All luxury rooms and suites offer magnificent views <br>
+of the golf course,the resort’s tropical gardens. 
+</b></font> </p><br><br>
+</center>
+
+<ul> 
+	<li> <img src="Jetwin.jpg" width="450" height="200"> </li>
+	<li> <img src="Cinnamon.jpg" width="450" height="200"> </li>
+	<li> <img src="Jaffna.jpg" width="450" height="200"> </li>
+	<li> <img src="Oak.jpg" width="450" height="200"> </li>
+</ul>
+
+
+<div class="container">
+  <form action="/action_page.php">
+
+ <h1> Reservation details </h1>
+  <div class="row">
+  	<div class="one">
+      <label for="fname">First Name</label>
+    </div>
+    
+	<div class="two">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="one">
+      <label for="lname">Last Name</label>
+    </div>
+    
+	<div class="two">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="one">
+      <label for="add1">Address 1</label>
+    </div>
+    
+	<div class="two">
+      <input type="text" id="add1" name="address1" placeholder="Your address..">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="one">
+      <label for="add2">Address 2</label>
+    </div>
+    
+	<div class="two">
+      <input type="text" id="add2" name="address2" placeholder="Your address..">
+    </div>
+  </div>
+  
+  
+  <div class="row">
+    <div class="one">
+      <label for="country">Country</label>
+    </div>
+    <div class="two">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+		<option value="australia">Sri Lanka</option>
+		<option value="australia">China</option>
+		<option value="australia">India</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="one">
+      <label for="phone">Phone</label>
+    </div>
+    
+	<div class="two">
+      <input type="text" id="phone" name="phonee" placeholder="Your phone number..">
+    </div>
+  </div>
+  
+ <div class="row">
+    <div class="one">
+      <label for="mail">E-mail</label>
+    </div>
+    
+	<div class="two">
+      <input type="text" id="mail" name="email" placeholder="Your E-mail address..">
+    </div>
+  </div>
+
+ <div class="row">
+    <div class="one">
+      <label for="room">Room Type</label>
+    </div>
+    <div class="two">
+      <select id="room" name="room">
+        <option value="australia">Suite</option>
+        <option value="canada">Executive suite</option>
+        <option value="usa">Studio hotel room</option>
+		<option value="australia">Penthouse suite living room</option>
+		<option value="australia">Deluxe hotel room</option>
+		<option value="australia">Presidention suite</option>
+      </select>
+    </div>
+  </div>
+ 
+ 
+  
+<div class="row">
+    <div class="one">
+      <label for="date">Check-in Date & Time</label>
+    </div>
+    <div class="two">
+      <input type="date" id="inDate"> <input type="time" id="time">
+    </div>
+  </div>
+
+ 
+   <div class="row">
+    <div class="one">
+      <label for="odate">Check-out Date & Time</label>
+    </div>
+    <div class="two">
+      <input type="date" id="outDate"> <input type="time" id="otime">
+    </div>
+  </div>
+ 
+ 
+  <div class="row">
+    <div class="one">
+      <label for="comment">Comment</label>
+    </div>
+    <div class="two">
+      <textarea id="comment" name="comment" placeholder="Write something.." style="height:180px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+<br><br>
+
+<marquee bgcolor="black"> <font size="25" color="white">  Luxury Hotels In Sri Lanka </marquee>
+<br><br><br>
+
+</body>
+</html>
